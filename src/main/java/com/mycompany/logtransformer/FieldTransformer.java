@@ -26,7 +26,9 @@ public class FieldTransformer implements Processor {
     String logMessage = exchng.getIn().getBody(String.class);
 
     if (logMessage.trim().startsWith(fieldMapper.getStartIdentifier())) {
-      String[] logFields = logMessage.split("\\" + Character.toString(fieldMapper.getDelimiter()));
+      int noOfPositions = fieldMapper.getFieldPositions().size();
+      int splitLimit = fieldMapper.getFieldPositions().get(noOfPositions - 1);
+      String[] logFields = logMessage.split("\\" + Character.toString(fieldMapper.getDelimiter()), splitLimit + 1);
 
       List<Integer> fieldPositions = fieldMapper.getFieldPositions();
       for (Integer pos : fieldPositions) {

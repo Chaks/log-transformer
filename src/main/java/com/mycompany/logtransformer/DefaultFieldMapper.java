@@ -35,7 +35,8 @@ public class DefaultFieldMapper extends FieldMapper {
     fieldPositions.add(new Integer(11));
     fieldPositions.add(new Integer(15));
     fieldPositions.add(new Integer(18));
-
+    fieldPositions.add(new Integer(19));
+    
     return fieldPositions;
   }
 
@@ -53,7 +54,8 @@ public class DefaultFieldMapper extends FieldMapper {
     fieldNames.put(new Integer(10), "field10");
     fieldNames.put(new Integer(11), "field11");
     fieldNames.put(new Integer(15), "field15");
-    fieldNames.put(new Integer(18), "field18");    
+    fieldNames.put(new Integer(18), "field18");
+    fieldNames.put(new Integer(19), "fieldLast");
 
     return fieldNames;
   }
