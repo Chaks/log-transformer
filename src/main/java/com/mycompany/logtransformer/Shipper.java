@@ -35,7 +35,7 @@ public class Shipper {
     logQueue = args[4];
 
     CamelContext camelContext = new DefaultCamelContext();
-    camelContext.addComponent("activemq", activeMQComponent("tcp://ubuntu:61616?trace=false"));
+    camelContext.addComponent("activemq", activeMQComponent("tcp://ubuntu:61616?trace=true"));
     camelContext.addRoutes(new RouteBuilder() {
       @Override
       public void configure() throws Exception {
