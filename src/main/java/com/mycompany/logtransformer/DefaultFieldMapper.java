@@ -30,7 +30,7 @@ public class DefaultFieldMapper extends FieldMapper {
     fieldPositions.add(new Integer(4));
     fieldPositions.add(new Integer(5));
     fieldPositions.add(new Integer(8));
-    fieldPositions.add(new Integer(8));
+    fieldPositions.add(new Integer(9));
     fieldPositions.add(new Integer(10));
     fieldPositions.add(new Integer(11));
     fieldPositions.add(new Integer(15));
